@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -107,6 +108,31 @@ body {
     color: white;
     transform: translateY(-2px);
 }
+
+/* Hamburger Menu Styles */
+.hamburger-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
 
 /* Projects Section */
 .projects {
@@ -340,6 +366,53 @@ body {
         width: 90%;
         max-width: 400px;
     }
+
+        .hamburger-icon {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .hamburger-toggle:checked ~ .nav-btn {
+        display: flex;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn a {
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .nav-btn a:hover {
+        background: rgba(108, 158, 255, 0.1);
+        border-bottom: none;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -392,6 +465,53 @@ body {
     
     #contact {
         width: 330px;
+    }
+
+        .hamburger-icon {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .hamburger-toggle:checked ~ .nav-btn {
+        display: flex;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn a {
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .nav-btn a:hover {
+        background: rgba(108, 158, 255, 0.1);
+        border-bottom: none;
     }
 }
 
@@ -458,5 +578,52 @@ body {
     
     .contact-details table {
         border-spacing: 12px;
+    }
+
+        .hamburger-icon {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .hamburger-toggle:checked ~ .nav-btn {
+        display: flex;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-toggle:checked ~ .hamburger-icon span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn a {
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .nav-btn a:hover {
+        background: rgba(108, 158, 255, 0.1);
+        border-bottom: none;
     }
 }
