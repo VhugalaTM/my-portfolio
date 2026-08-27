@@ -4,98 +4,118 @@
         <title>Vhugala Ticius Mulaudzi - Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/project.css">
     </head>
     <body>
-        <div class="nav">
-            <div class="logo-title">
-                <span class="my-name">Vhugala Ticius Mulaudzi</span><br>
-                <span class="my-position">Software Developer</span>
-            </div>
-            <div class="nav-btn">
-                <a href="../index.html">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="../assets/Vhugala_Mulaudzi_Junior_Developer_Resume.pdf">Resume</a>
-            </div>
+        <div class="video-loop">
+            <video width="650" autoplay muted loop playsinline>
+                <source src="../assets/background.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
         </div>
-        <div class="projects">
-            <h2>Personal Projects</h2>
-            <div class="project-1">
-                <h4>Full-stack Chat system</h4>
-                <div>
-                    <img src="../assets/chat1.png" alt="chat system" width="500">
+        <div class="overlay"></div>
+        
+        <div class="main-wrapper">
+            <div class="nav">
+                <div class="logo-title">
+                    <span class="my-name">Vhugala Ticius Mulaudzi</span><br>
+                    <span class="my-position">Software Developer</span>
                 </div>
-                <p>                    
-                    Normalized database schema with real-time DOM updates. <br>
-                    Repo: <a href="https://github.com/VhugalaTM/chatwithme.git">View</a>
-                </p>
-            </div>
 
-            <div class="project-2">
-                <h4>Progressive Web App(PWA)</h4>
-                <div>
-                    <img src="../assets/snap-desk.png" alt="landing page" width="500">
+                <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+                <label for="hamburger-toggle" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="nav-btn">
+                    <a href="../index.html">Home</a>
+                    <a href="./about.html">About Me</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="../assets/Vhugala_Mulaudzi_Junior_Developer_Resume.pdf" target="_blank">Resume</a>
                 </div>
-                <p>
-                    Offline-capable landing page deployed on GCP with service worker caching. <br>  
-                    Live Demo: <a href="https://landing-page-d1f65.web.app">View</a>
-                </p>
-            </div>
 
-            <div class="project-3">
-                <h4>Full-stack Loan Application</h4>
-                <div>
-                    <img src="../assets/quickLoan3.png" alt="loan application" width="500">
-                </div>
-                <p>
-                    A web based loan application system, which allows users to make loan and be reviewed by the admin for approval. <br>
-                    Repo: <a href="https://github.com/VhugalaTM/Loan-System.git">View</a>
-                </p>
             </div>
-
-            <div class="project-4">
-                <h4>E-commerce Website</h4>
-                <div>
-                    <img src="../assets/butcher.png" alt="e commerce" width="500">
+            <div class="projects">
+                <h2>Personal Projects</h2>
+                <div class="project-1">
+                    <h4>Full-stack Chat system</h4>
+                    <div>
+                        <img src="../assets/chat1.png" alt="chat system" width="500">
+                    </div>
+                    <p>                    
+                        Normalized database schema with real-time DOM updates. <br>
+                        Repo: <a href="https://github.com/VhugalaTM/chatwithme.git">View</a>
+                    </p>
                 </div>
-                <p>                    
-                    Responsive UI with cart logic and state management.  <br>
-                    Live Demo: <a href="https://my-butcher-1.web.app">View</a>
-                </p>
-            </div>
-            
-            <div class="project-5">
-                <h4>Mp3 Player</h4>
-                <div>
-                    <img src="../assets/player.png" alt="e commerce" width="500">
+    
+                <div class="project-2">
+                    <h4>Progressive Web App(PWA)</h4>
+                    <div>
+                        <img src="../assets/snap-desk.png" alt="landing page" width="500">
+                    </div>
+                    <p>
+                        Offline-capable landing page deployed on GCP with service worker caching. <br>  
+                        Live Demo: <a href="https://landing-page-d1f65.web.app">View</a>
+                    </p>
                 </div>
-                <p>
-                    A single music player developed for the purpose of releasing a song. <br>
-                    Live Demo: <a href="https://onewa-by-brokencafe.web.app">View</a>
-                </p>
+    
+                <div class="project-3">
+                    <h4>Full-stack Loan Application</h4>
+                    <div>
+                        <img src="../assets/quickLoan3.png" alt="loan application" width="500">
+                    </div>
+                    <p>
+                        A web based loan application system, which allows users to make loan and be reviewed by the admin for approval. <br>
+                        Repo: <a href="https://github.com/VhugalaTM/Loan-System.git">View</a>
+                    </p>
+                </div>
+    
+                <div class="project-4">
+                    <h4>E-commerce Website</h4>
+                    <div>
+                        <img src="../assets/butcher.png" alt="e commerce" width="500">
+                    </div>
+                    <p>                    
+                        Responsive UI with cart logic and state management.  <br>
+                        Live Demo: <a href="https://my-butcher-1.web.app">View</a>
+                    </p>
+                </div>
+                
+                <div class="project-5">
+                    <h4>Mp3 Player</h4>
+                    <div>
+                        <img src="../assets/player.png" alt="e commerce" width="500">
+                    </div>
+                    <p>
+                        A single music player developed for the purpose of releasing a song. <br>
+                        Live Demo: <a href="https://onewa-by-brokencafe.web.app">View</a>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div id="contact">
-            <h3>Contact</h3>
-            <div class="contact-details">
-                Phone number: 0672707936
-                <table width="15%">
-                    <tr>
-                        <th>Email</th>
-                        <th>GitHub</th>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <a href="https://brokencafe99@gmail.com">
-                                <img src="../assets/email.png" width="40" alt="Email">
-                            </a>
-                        </td>
-                        <td align="center">
-                            <a href="https://github.com/VhugalaTM">
-                                <img src="../assets/github (1).png" width="40" alt="GitHub">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
+            <div id="contact">
+                <h3>Contact</h3>
+                <div class="contact-details">
+                    Phone number: +27 67 270 7936
+                    <table width="15%">
+                        <tr>
+                            <th>Email</th>
+                            <th>GitHub</th>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <a href="mailto:brokencafe99@gmail.com">
+                                    <img src="../assets/email.png" width="40" alt="Email">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://github.com/VhugalaTM">
+                                    <img src="../assets/github (1).png" width="40" alt="GitHub">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </body>
